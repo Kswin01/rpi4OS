@@ -1,9 +1,9 @@
-#include <stdio.h>         //putchar
 #include <string.h>        //strcpy, strcat, memcpy, memset
 #include <ctype.h>         //isdigit
 #include <stdbool.h> 
 #include <stdint.h>
 #include <stdarg.h>
+#include "../io.h"
  
 char* __int_str(intmax_t i, char b[], int base, bool plusSignIfNeeded, bool spaceSignIfNeeded,
                 int paddingNo, bool justify, bool zeroPad) {
@@ -68,9 +68,9 @@ char* __int_str(intmax_t i, char b[], int base, bool plusSignIfNeeded, bool spac
  
     return b;
 }
- 
+
 void displayCharacter(char c, int* a) {
-    putchar(c);
+    uart_writeText(c);
     *a += 1;
 }
  

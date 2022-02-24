@@ -26,3 +26,22 @@ char *strcpy(char *dest, const char *src) {
 
     return returnVal;
 }
+
+
+char *strcat(char *dest, const char *src) {
+    // TO-DO:
+
+    return NULL;
+}
+
+void *memcpy(void *dest, const void *src, size_t n) {
+    // TO-DO:
+
+    return NULL;
+}
+
+void *memset(void *s, int c, size_t n) {
+    // TO-DO:
+
+    return NULL;
+}
